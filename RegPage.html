@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Registration page</title>
+</head>
+
+<body style="background-color: rgb(242,242,242);"><center>
+<div class="loginbox">
+	
+<h1>Create account</h1>
+<img src="images/icon.png" alt="Icon"><br>
+	<form onsubmit="return reg_validation()"> 
+		<input type="text" id="reg-name" placeholder="Name"><br>
+		<input type="email" id="reg-email" placeholder="Email"><br>
+		<input type="password" id="reg-pass" placeholder="Password"><br>
+		
+		<button class="reg-btn">Create</button>
+		<div id="err"></div>
+	</form> 
+	
+	</center>
+</div>
+<script type="text/javascript" src="js/script.js" defer></script>
+<script>
+	function reg_validation(){
+
+        let regPassrd = document.getElementById("reg-pass").value;
+        let regNames= document.getElementById("reg-name").value;
+        let regEmail= document.getElementById("reg-email").value;
+        //Check Exists User
+        if(users!==null){
+    for(let i=0; i<users.length; i++){
+if(regEmail==users[i].email){
+alert('This Email already exists!');
+return;
+}
+    }
+}
+    let sym=[/#/,/\$/,/%/,/\^/,/&/,/\*/, /\(/,/\)/,/\+/];
+    for(let j=0; j<sym.length; j++){
+        if(sym[j].test(regEmail)==true){err.innerHTML='<p style = "color:red;">You cannot use characters like: #,$,%,^,&,*, (,),+</p>';     return false;}
+    }
+    if(regPassrd.length<8){
+    err.innerHTML='<p style = "color:red;">*The password is less than 8 characters</p>';
+    }
+    else if(regNames.length==0){err.innerHTML='<p style = "color:red;">*Fill the Name</p>';}
+     else if(regEmail.length==0){err.innerHTML='<p style = "color:red;">*Fill the Email</p>';}
+    else{
+        err.innerHTML='';
+        store();
+    }
+
+    return false;
+    }
+
+</script>
+</body>
+</html>

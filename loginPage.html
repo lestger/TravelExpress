@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Login</title>
+</head>
+
+<body style="background-color: rgb(242,242,242);">
+	<center>
+<div class="loginbox fadeIn">
+	
+<h1>Welcome</h1>
+<img src="images/icon.png" alt="Icon"><br> 
+<form onsubmit="return log_validation()">
+		<input type="email" id='log-email' placeholder="Email" required><br><br>
+		<input type="password" id="log-pass" placeholder="Password"><br><br>
+		<button type="submit" id="logbtn" class="log-btn"  onclick="check()">LOGIN</button>
+	
+	</form> <br>
+<a href="RegPage.html" ><button class="reg-btn">Create account</button></a>
+	<div id="err"></div>
+	</center>
+</div>
+<script type="text/javascript" src="js/script.js" defer></script>
+<script>
+	function log_validation(){
+        let logPassrd = document.getElementById("log-pass").value;
+        let logEmail = document.getElementById("log-email").value;
+
+    if(logPassrd.length==0){
+    err.innerHTML='<p style = "color:red;">*Fill the password</p>';
+    }
+     
+    else{
+        err.innerHTML='';
+    }
+return false;}
+    
+
+</script>
+</body>
+</html>

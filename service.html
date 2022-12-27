@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Services</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="https://w7.pngwing.com/pngs/215/796/png-transparent-responsive-web-design-computer-icons-webflow-social-media-social-media-blue-text-logo.png">
+	<!----Giving the logo----->
+</head>
+<body onload="put()">
+<header>
+<div class="container">
+	<a href="homepage.html"><img src="images/icon.png" alt="logo" class="logo"></a>
+	<!----giving the icon---->
+	<nav>
+		<!---Nav bar---->
+	<ul class="menu">
+		<li class="nav_link"><a href="homepage.html">Home</a></li>
+		<li class="nav_link"><a href="benefit.html">Benefits</a></li>
+		<li class="nav_link"><a href="service.html">Services</a></li>
+		<li class="nav_link"><a href="raffle.html">Raffle</a></li>
+
+		<li class="nav_link"><a href="about.html">About</a></li>
+
+		
+		<li class="nav_link"><a href="contact.html" id="contact">Contact Us</a></li>
+		
+	</ul>
+</nav>
+</div>
+</header>
+<div>
+	<h1>Services</h1><!----Main----->
+	<h2 align="center">Why our services?</h2>
+	<p>Travel Express is an agency for the sale of railway and airline tickets, founded in 2000, has many years of successful experience in the Republic of Kazakhstan.
+
+  </p>
+  <!-- <img src="http://travelexpress.kz/wp-content/uploads/2015/01/hero.jpg" alt="" style="width:800px; height: 400px; border-radius: 28px;"> -->
+
+<br>
+<p> We have been one of the leading agencies in Kazakhstan for a long time. In 2007, the company received hero accreditation from the International Air Transport Association IATA. We are also the general representative of Pegasus Airline in the territory of two states: the Republic of Kazakhstan.
+We have a license to carry out tourist activities. For a long period of work in the market, we have acquired reliable and proven partners in all countries. Flying on vacation with us is not only comfortable, but also safe. Many tourists who come to us for the first time become regular customers and friends of our company.</p>
+	<div class="slideshow-container" style="display: block;">
+        <div class="Slides fade">
+            <img src="https://visituganda.com/uploads/profiles/utb_1386250708N.jpg" style="width:100%">
+        </div>
+
+        <div class="Slides fade" style="display: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Hotel_Bristol_w_Warszawie.JPG" style="width:100%">
+        </div>
+
+        <div class="Slides fade" style="display: none;">
+            <img src="https://hotelsi.ru/panel/uploads/posts/2019-07/1562142659_news-15-15.jpg" style="width:100%">
+        </div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+
+</div>
+</div>
+<div class="nav_bottom"><!-----Bottom nav---->
+	<p align="center" style="font-size:15px; color:white">© 2021 All rights reserved</p>
+</div>
+
+<script>
+	let slideIndex = 1;//slide show
+
+	showSlides();
+
+	function plusSlides(plus) {
+		slideIndex += plus;
+		const slides = document.getElementsByClassName("Slides");
+		if (slideIndex > slides.length) {
+			slideIndex = 1
+		}
+		if (slideIndex < 1) {
+			slideIndex = slides.length
+		}
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex - 1].style.display = "block";
+		slideIndex++;
+	}
+
+	function showSlides() {
+		const slides = document.getElementsByClassName("Slides");
+		if (slideIndex > slides.length) {
+			slideIndex = 1
+		}
+		if (slideIndex < 1) {
+			slideIndex = slides.length
+		}
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex - 1].style.display = "block";
+		slideIndex++;
+		setTimeout(showSlides, 3000);
+	}
+
+</script>
+</body>
+</html>
+

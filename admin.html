@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Admin Panel</title>
+</head>
+<style>
+	th{
+		padding-right: 20px;
+	}
+</style>
+
+<body style="background-color: rgb(242,242,242);" onload="put(); displayUsers();">
+	<header>
+		<div class="container"><!----Open tde class--->
+	<a href="homepage.html"><img src="images/icon.png" alt="logo" class="logo"></a>
+	<nav><!---NAV bar--->
+	<ul class="menu">
+		<li class="nav_link"><a href="homepage.html">Home</a></li>
+		<li class="nav_link"><a href="benefit.html">Benefits</a></li>
+		<li class="nav_link"><a href="service.html">Services</a></li>
+		<li class="nav_link"><a href="raffle.html">Raffle</a></li>
+
+		<li class="nav_link"><a href="about.html">About</a></li>
+		<li class="nav_link"><a href="contact.html" id="contact">Contact Us</a></li>
+		<div id="names"><li class="nav_link" style="float: right;"><a href="loginPage.html">Login</a></li></div>
+	
+	</ul>
+</nav>
+</div>
+</header>
+
+<div class="fadeIn profile-div" style="background-color: white">
+<h1 style="text-align:center">Admin Profile</h1>
+<center>
+	<div id="profile-pic"></div>
+<label class="custom-file-upload">
+	<input type="file" onchange="getImg()" id="putImg">Choose image
+</label>
+</center>
+<h1>Admin Info</h1>
+
+
+<div id="prof-name"></div>
+<hr>
+<h2>Users</h2>
+<hr>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Login</th>
+				<th>Password</th>
+				<th>Admin</th>
+				<th>Status</th>
+
+			</tr>
+			<tbody id='users-data'>
+				
+			</tbody>
+		</thead>
+	</table>
+	<hr>
+	<h2>New User</h2>
+	<form onsubmit="newUser()">
+		<input type="text" style="width: 20%" placeholder="Name" id='newUserName'><br>
+		<input type="email" style="width: 20%" placeholder="Email" id='newUserEmail' required><br>
+		<input type="text" style="width: 20%" placeholder="Password" id='newUserPass'><br>
+		<button class="bttn" >Create a New User</button>
+	</form>
+	<hr>
+	
+</div>
+
+<div class="nav_bottom"><!---Bottom nav bar--->
+	<p align="center" style="font-size:15px; color:white">© 2021 All rights reserved</p>
+</div>
+<script type="text/javascript" src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400&display=swap');
+/**/
+body{
+	font-family: 'Noto Sans Mono', monospace;
+	
+  margin:0 auto;
+
+}
+
+.logo{			/*My logo*/
+	margin-top: -10px;
+	float: left;
+	width: 100px; height: 100px; 
+}
+.container{	/*nav-bar*/
+	border: 2px solid ;
+	border-radius:10px ;
+	background-color: #425465;
+	height: 70px;
+	
+	padding-bottom:12px ;
+	padding-right: 50px;
+  
+
+}
+.tours{max-width:1500px;
+  text-align: center;
+}
+
+/*Adaptive design*/
+@media screen and (max-width:992px){
+ /* body{
+    max-width: 992px;
+ }*/
+ p{    max-width: 970px;
+}
+  .tours{max-width:700px;
+    text-align: center;
+  }
+  .t_img{
+  margin: 10px;}
+
+}
+/*@media (max-width:600px){
+  body{
+    max-width: 600px;
+  }
+
+   p{    max-width: 550px;}
+  .tours{max-width:550px;
+    display: flex;
+    flex-direction: column;
+  }   
+  }
+
+}
+
+
+
+@media (max-width:300px){
+  p{    max-width: none;
+};
+  body{
+    max-width: none;
+  }
+  .tours{max-width:none;}
+}*/
+
+/*----------------*/
+/*--------Animation----------*/
+.fadeIn{
+    transition: opacity 2s ease-in;
+    animation: fadein 2s;
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.nav_link {/*navigation links*/
+  display:inline-block;
+	margin-top: 15px;
+	list-style: none;
+	float: left;
+}
+.nav_link a:hover{
+color: red;
+}
+a{   	/*Links in nav*/
+	color:white; 
+	text-decoration: none;
+}
+
+
+#contact{
+	border: 1px solid;
+	border-radius: 15px;
+	padding:10px;
+	
+ 
+	
+	}
+#contact:hover{
+	color: black;
+background-color: #ffffff;
+}
+li{ 
+	position:relative;
+float:left;
+padding-left:30px;
+
+}
+#account_img{
+      width: 45px;
+    height: 45px;
+    border:1px solid;
+    border-color: none;
+    border-radius: 50%;
+    position: relative;
+    bottom: 13px;
+
+}
+#account_img:hover{
+  border-color: #45a049;
+  transition-duration: 500ms;
+}
+#profile-pic{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin:0 auto;
+}
+.t_img{
+  border-radius: 25px;
+  
+  max-width: 100%;
+  margin: 10px;
+  
+  
+}
+.t_img:hover{
+  border-radius: 0;
+  transition-duration: 500ms;
+}
+.nav_bottom {		/*bottom nav-bar*/
+	border: 2px solid ;
+	border-radius:10px ;
+	background-color: #425465;
+	height: 70px;
+	align-items: center;
+
+}
+.bttn{
+	border: 1px solid;
+	border-radius: 10px;
+	padding:10px;
+	margin:10px;
+	text-decoration: none;
+  background-color: #425465;
+	color: white;
+
+}
+.bttn:hover{
+	
+background-color: #45a049;
+}
+
+.tours {
+  margin: auto;
+
+}
+.table1{
+  display: flex;
+}
+
+/*about*/
+.profile-pic{
+	width: 180px;
+	height: 180px;
+}
+
+/*Bolgary*/
+.bol-body{
+	font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url(http://travelexpress.kz/wp-content/uploads/bulgaria_background.jpg);
+        color: white;}
+  .bolgary-img img{
+}
+/*Shri-Lanka*/
+.shrl-body{
+	font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("http://travelexpress.kz/wp-content/uploads/background_turkey-1.jpg");
+        color: white;
+}
+/*Cuba*/
+.cub-body{
+font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("http://travelexpress.kz/wp-content/uploads/cuba_background.jpg");
+        color: white;
+}
+/*Italy*/
+.it-body{
+font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("http://travelexpress.kz/wp-content/uploads/background_italy-1.jpg");
+        color: white;
+}
+/*Turkey*/
+.tur-body{
+font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("http://travelexpress.kz/wp-content/uploads/background_turkey-1.jpg");
+        color: white;
+}
+/*Egypt*/
+.eg-body{
+font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("http://travelexpress.kz/wp-content/uploads/background_egypt.jpg");
+        color: white;
+}
+/*India*/
+.ind-body{
+font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("http://travelexpress.kz/wp-content/uploads/background_india.jpg");
+        color: white;
+}
+/*Malasya*/
+.mal-body{
+font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("http://travelexpress.kz/wp-content/uploads/background_malaysia.jpg");
+        color: white;
+}
+/*Vietnam*/
+.viet-body{
+  font-family:Arial; 
+background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("http://travelexpress.kz/wp-content/uploads/background_vietnam.jpg");
+        color: white;
+}
+/*-----------About----------------*/
+
+/* Style inputs with type="text", select elements and textareas */
+input, select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #425465;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+
+}
+
+/* When moving the mouse over the submit button, add a darker blue color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-div{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*-----------------------------Login Page-----------------------------------------*/
+.loginbox{
+  
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  top: 100px;
+  width: 300px;
+  height: 500px;
+  padding: 40px;
+}
+
+.reg-btn{
+
+  background-color:rgb(84, 191, 31) ;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+/*  color:  #FFFFFF;
+*/ 
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.log-btn{
+
+  background-color:#425465 ;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color:  #FFFFFF;
+ 
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.reg-btn:hover
+{transition-duration: 200ms;
+  background-color:rgb(191, 31, 31);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: #FFFFFF;
+}
+
+.log-btn:hover
+{
+  transition-duration: 200ms;
+  background-color:#45a049;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: #FFFFFF;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+
+/*----------------------------Admin-Profile Panel----------------------------------------------------*/
+
+.profile-div{
+border-radius: 5px;
+
+padding: 15px 15px 15px 30px;  
+margin: 15px;}
+
+#orders{
+  margin:20px;
+}
+/*---------------------------SOCIAL ICONS------------------------------------------*/
+.soc-box{
+position: relative;
+
+}
+.fa {
+
+  padding: 10px;
+  
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+ 
+}
+
+.fa-youtube {
+  background: #bb0000;
+ 
+}
+
+.fa-instagram {
+  background: #125688;
+  
+}
+
+/*--------------------------------------------------------------------------------*/
+/*---------------------------------Slide-show-----------------------------------------------*/
+ .slideshow-container {
+            max-width: 1000px;
+            
+            position: relative;
+
+            margin: auto;
+        }
+
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    margin-top:10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
